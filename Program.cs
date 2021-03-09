@@ -9,12 +9,12 @@ namespace SF3._7
             Console.WriteLine("Enter your name!");
             string name = Console.ReadLine();
             Console.WriteLine("Enter your age!");
-            var age = checked((byte) int.Parse(Console.ReadLine()));
+            var age = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Your name is {0}!! But your age is {1}!!!", name, age);
 
             Console.WriteLine("Сообщи день недели!");
-            var myday = checked((DaysOfWeek) int.Parse(Console.ReadLine()));
+            var myday = (DaysOfWeek) int.Parse(Console.ReadLine());
             Console.WriteLine("День недели - {0}", myday);
 
             Console.ReadKey();
